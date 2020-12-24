@@ -9,6 +9,22 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "fajala";
+  src: url("fonts/FjallaOne-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+       url("fonts/websymbols-regular-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?iefix") format("embedded-opentype"),
+       url("fonts/websymbols-regular-webfont.woff") format("woff"),
+       url("fonts/websymbols-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /*Estilos Generales*/
 *{
   padding: 0px;
@@ -89,6 +105,17 @@ a:visited{
 
 .blue{
   color: #0c73f2 !important;
+}
+
+.orange{
+  color: #d96d2a !important;
+}
+
+.icon{
+  font-family: "icons";
+  float: left;
+  margin-right: 4px;
+  margin-top: -2px;
 }
 /*fin Estilos Generales*/
 
@@ -218,7 +245,6 @@ a:visited{
 
 /*Barra lateral*/
 #aside, #frase{
-  clear:both;
   width: 200px;
   float: left;
   margin: 30px;
@@ -228,10 +254,12 @@ a:visited{
   font-family: sans-serif, Arial, Helvetica;
 }
 #frase{
+  /*clear:both;*/
   width: 180px;
   padding: 10px;
   font-size: 14px;
   font-family: sans-serif;
+
 }
 
 #aside .widget{
@@ -294,7 +322,58 @@ a:visited{
   margin: 0px auto;
   text-align: center;
 }
-
-
 /*Fin Formularios barra lateral*/
 /*Fin Barra lateral*/
+
+/*Secciones*/
+#sections{
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+}
+
+#sections .titulo{
+  font-family: "fajala";
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: top 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#sections section{
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 4px #C9C9C9;
+  color: #333333;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#sections .article{
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sections .date{
+  color: gray;
+  font-size: 14px;
+}
+
+#sections .stickerOne,
+          .stickerTwo{
+  position:absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#sections .stickerTwo{
+  margin-left: 64%;
+}
+/*Fin Secciones*/
