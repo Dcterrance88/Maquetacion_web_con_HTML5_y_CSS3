@@ -117,6 +117,11 @@ a:visited{
   margin-right: 4px;
   margin-top: -2px;
 }
+
+.clearfix{
+  float: none;
+  clear:both;
+}
 /*fin Estilos Generales*/
 
 /*Header*/
@@ -240,6 +245,7 @@ a:visited{
   width: 1250px;
   min-height: 1100px;
   margin: 0px auto;
+  font-family: sans-serif, Arial, Helvetica;
 }
 /*Fin Contenido cental*/
 
@@ -377,3 +383,25 @@ a:visited{
   margin-left: 64%;
 }
 /*Fin Secciones*/
+/* link historicos */
+#history{
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+/* fin link historicos */
+
+/*footer*/
+#footer{  
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color:white;
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 14px;
+  box-shadow: 0px 0px 2px gray;
+}
